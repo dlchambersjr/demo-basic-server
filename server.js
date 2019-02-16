@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Tell express where to load our "html" files from
-app.use(express.static('./public'));
+// app.use(express.static('./public'));
 
 // Create routes (paths) that the user can access the server from
 app.get('/hello', (request, response) => {
