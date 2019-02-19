@@ -27,6 +27,7 @@ app.get('/data', (request, response) => {
   response.status(200).json(airplanes);
 });
 
+// Path the redirects to index.html
 app.get('/', (request, response) => {
   response.status(200).redirect('index.html');
 });
